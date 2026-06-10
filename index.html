@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方老师 - 教育培训 · 企业出海 · 产品代理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        /* Sections */
+        section {
+            padding: 60px 0;
+            background: white;
+            margin: 20px 0;
+        }
+        
+        section:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #667eea;
+        }
+        
+        /* About */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .profile-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Experience */
+        .experience-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .experience-item h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        /* Products */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .product-card h3 {
+            padding: 20px;
+            color: #667eea;
+        }
+        
+        .product-card p {
+            padding: 0 20px 20px;
+        }
+        
+        /* Contact */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .contact-links a {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .contact-links a:hover {
+            background: #764ba2;
+        }
+        
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            nav .container {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>方老师</h1>
+            <p>教育培训专家 · 企业出海顾问 · 优质产品代理</p>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#about">关于我</a>
+            <a href="#experience">教育培训</a>
+            <a href="#overseas">企业出海</a>
+            <a href="#products">产品展示</a>
+            <a href="#contact">联系我</a>
+        </div>
+    </nav>
+    
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div>
+                    <!-- 头像预留位置 -->
+                    <div style="width: 300px; height: 300px; border-radius: 50%; background: #ddd; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                        <span style="color: #999;">头像待添加</span>
+                    </div>
+                </div>
+                <div>
+                    <p>您好！我是方老师，专注于教育培训和企业出海服务。</p>
+                    <p>拥有丰富的企业培训经验，服务过多家知名企业，帮助企业提升员工能力和国际竞争力。</p>
+                    <p>同时，我代理优质产品（割草机、润彩酸性染料），致力于为客户提供高性价比的解决方案。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>教育培训经验</h2>
+            <div class="experience-item">
+                <h3>南京新东方企业培训部</h3>
+                <p>为企业提供定制化英语培训方案，帮助员工提升商务英语沟通能力。</p>
+            </div>
+            <div class="experience-item">
+                <h3>服务客户</h3>
+                <ul>
+                    <li>国电南瑞</li>
+                    <li>华为</li>
+                    <li>中石化地球物理公司</li>
+                    <li>中铁宝桥</li>
+                    <li>苏美达</li>
+                    <li>蒂森克虏伯</li>
+                    <li>大全电气</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>培训特色</h3>
+                <p>✓ 定制化课程设计</p>
+                <p>✓ 实战场景模拟</p>
+                <p>✓ 灵活培训时间</p>
+                <p>✓ 效果跟踪评估</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Overseas Section -->
+    <section id="overseas">
+        <div class="container">
+            <h2>企业出海服务</h2>
+            <div class="experience-item">
+                <h3>服务内容</h3>
+                <p>✓ 海外市场调研与分析</p>
+                <p>✓ 跨境业务拓展咨询</p>
+                <p>✓ 国际商务沟通培训</p>
+                <p>✓ 海外客户开发策略</p>
+            </div>
+            <div class="experience-item">
+                <h3>成功案例</h3>
+                <p>帮助多家中国企业成功开拓北美、欧洲市场，建立稳定的海外客户关系。</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <h2>产品展示</h2>
+            <div class="products-grid">
+                <!-- Product 1: Lawn Mower -->
+                <div class="product-card">
+                    <img src="images/lawn-mower-1.jpg" alt="割草机" onerror="this.parentElement.innerHTML='<div style=&quot;height:250px;display:flex;align-items:center;justify-content:center;background:#f0f0f0;color:#999;&quot;>割草机图片</div>'">
+                    <h3>商用割草机</h3>
+                    <p>✓ 高效耐用，适合大面积草坪</p>
+                    <p>✓ 动力强劲，商用级别</p>
+                    <p>✓ 性价比高，支持批量采购</p>
+                    <p>✓ 目标客户：物业公司、园林公司、高尔夫球场</p>
+                </div>
+                
+                <!-- Product 2: Acid Dyes -->
+                <div class="product-card">
+                    <img src="images/dyes-1.jpg" alt="润彩酸性染料" onerror="this.parentElement.innerHTML='<div style=&quot;height:250px;display:flex;align-items:center;justify-content:center;background:#f0f0f0;color:#999;&quot;>染料图片</div>'">
+                    <h3>润彩®酸性染料</h3>
+                    <p>✓ 色光鲜艳，色谱齐全</p>
+                    <p>✓ 染色工艺简单，匀染性好</p>
+                    <p>✓ 牢度优良，质量稳定</p>
+                    <p>✓ 应用范围：羊毛、尼龙、丝绸、皮革</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>联系我</h2>
+            <p style="text-align: center; font-size: 1.1em;">
+                如果您对我的服务或产品感兴趣，欢迎随时联系！
+            </p>
+            <div class="contact-links">
+                <a href="mailto:brian715@163.com">发送邮件</a>
+                <a href="https://www.linkedin.com/in/brianfang" target="_blank">LinkedIn 主页</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 方老师. All rights reserved.</p>
+            <p>Email: brian715@163.com</p>
+        </div>
+    </footer>
+</body>
+</html>
