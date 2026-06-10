@@ -54,8 +54,21 @@
         
         nav .container {
             display: flex;
+            align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        nav .nav-links {
+            display: flex;
             gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav .lang-switch {
+            margin-left: auto;
         }
         
         nav a {
@@ -205,12 +218,14 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#overseas">Overseas Business</a>
-            <a href="#products">Products</a>
-            <a href="#contact">Contact</a>
-            <a href="../" style="margin-left: auto; background: #667eea; color: white; padding: 5px 15px; border-radius: 20px;">中文</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#overseas">Overseas Business</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="../" class="lang-switch" style="background: #667eea; color: white; padding: 5px 15px; border-radius: 20px;">中文</a>
         </div>
     </nav>
     
